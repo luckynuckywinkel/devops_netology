@@ -6,12 +6,12 @@ Hello, Git!
   
 - В .gitignore описываются все "чувствительные" для терраформ файлы, которые могут содержать файлы конфигурации, файлы состояния инфраструктуры и переменные и которые ни коим образом не должны "светиться" в системе контроля версий.  
   
-# Local .terraform directories  
+### Local .terraform directories  
   
 
 **/.terraform/* - игнорируются все файлы и директории, содержащиеся в директориях **.terraform** где бы они ни находились внутри проекта
 
-# .tfstate files  
+### .tfstate files  
   
 
 *.tfstate - игнорируется <любое_имя>.tfstate  
@@ -21,7 +21,7 @@ Hello, Git!
   
 
 
-# Crash log files  
+### Crash log files  
   
 
 crash.log - игнорируется файл crash.log  
@@ -31,10 +31,10 @@ crash.*.log - игнорируется любой файл файл crash.<чт�
   
 
 
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version 
-# control as they are data points which are potentially sensitive and subject 
-# to change depending on the environment.  
+### Exclude all .tfvars files, which are likely to contain sensitive data, such as
+### password, private keys, and other secrets. These should not be part of version 
+### control as they are data points which are potentially sensitive and subject 
+### to change depending on the environment.  
   
 
 *.tfvars - игнорируется любой файл в формате *.tfvars  
@@ -44,8 +44,8 @@ crash.*.log - игнорируется любой файл файл crash.<чт�
   
 
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in  
+### Ignore override files as they are usually used to override resources locally and so
+### are not checked in  
   
 
 override.tf - игнорируется указанный файл  
@@ -61,13 +61,13 @@ override.tf.json - то же самое, что и выше.
   
 
 
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
+### Include override files you do wish to add to version control using negated pattern
+### !example_override.tf
 
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
+### Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+### example: *tfplan*
 
-# Ignore CLI configuration files  
+### Ignore CLI configuration files  
 
 .terraformrc - игнорируется скрытый файл .terraformrc  
   
